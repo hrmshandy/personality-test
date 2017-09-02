@@ -1,0 +1,45 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+//@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+.custom-control--rtl {
+  padding-left: 0;
+  padding-right: 1.5rem;
+  .custom-control-indicator {
+    left: auto;
+    right: 0;
+  }
+}
+
+.take-a-test {
+  .custom-control {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 3rem;
+  }
+  .custom-control--rtl {
+    padding-right: 3rem;
+  }
+  .custom-control-indicator {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #ccc;
+    background: #fff;
+  }
+  .custom-radio .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: none;
+  }
+  .custom-control-input:checked ~ .custom-control-indicator {
+    border-color: color(blue);
+  }
+}
